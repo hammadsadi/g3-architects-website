@@ -207,6 +207,22 @@ section {
   font-size: 20px;
 }
 
+/* Sponsor Section Style */
+.sponsor-section-heading {
+  text-align: center;
+  margin: 0px auto 50px auto;
+}
+.sponsor-section-heading h3 {
+  margin-bottom: 24px;
+}
+.sponsor-logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sponsor-logo img {
+  width: 150px;
+}
+
 /* Responsive Style Here */
 
 /* Small Device */
@@ -247,6 +263,11 @@ section {
   .fact-item:hover {
     transform: none;
   }
+  .sponsor-logo {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
 }
 
 /*  Medium Devices */
@@ -283,5 +304,10 @@ section {
   }
   .fact-item:hover {
     transform: none;
+  }
+  .sponsor-logo {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
   }
 }
