@@ -21,6 +21,7 @@ p {
 }
 img {
   width: 100%;
+  /* height: 100%; */
 }
 
 /* Header Style */
@@ -113,6 +114,62 @@ section {
   max-width: 537px;
 }
 
+/* Features Section Styles */
+.fatures-section {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+.features-content-heading h3 {
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+
+.features-item {
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
+}
+.item-subheading {
+  color: #131313;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.experience {
+  width: 342px;
+  /* height: 200px; */
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  right: 120px;
+  bottom: 125px;
+}
+.experience h3 {
+  color: #fff;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 107.692% */
+}
+.experience .experience-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+
 /* Responsive Style Here */
 
 /* Small Device */
@@ -137,6 +194,14 @@ section {
   }
   .team-image-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .fatures-section {
+    flex-direction: column;
+  }
+  .experience {
+    width: 210px;
+    right: -16px;
+    bottom: 125px;
   }
 }
 
